@@ -1,19 +1,28 @@
 import React from "react";
 import { List } from "antd";
 
-const arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const arr = [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+];
 
-const Main = () => {
+const Sidebar = () => {
   return (
     <div>
       <List
         size="large"
-        header={<div>Header</div>}
-        footer={<div>Footer</div>}
+        header={<div style={{ color: "maroon" }}>MUSIC</div>}
         bordered
         dataSource={arr}
         renderItem={(item) => (
-          <List.Item style={{ color: "white", fontWeight: "bolder" }}>
+          <List.Item
+            style={{
+              color: "white",
+              fontWeight: "bolder",
+              textShadow:
+                "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+            }}
+          >
             Hello World
           </List.Item>
         )}
@@ -22,4 +31,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Sidebar;
