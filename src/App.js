@@ -20,8 +20,8 @@ function App() {
         </Col>
         <Col sm={21} md={18} lg={18}>
           <Main />
-          <Video/>
-          <Featured/>
+          <Video />
+          <Featured />
         </Col>
       </Row>
     </div>

@@ -11,7 +11,18 @@ const Sidebar = () => {
     <div>
       <List
         size="large"
-        header={<div style={{ color: "maroon" }}>MUSIC</div>}
+        header={
+          <div
+            style={{
+              color: "maroon",
+              textShadow:
+                "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                fontWeight:"bolder"
+            }}
+          >
+            MUSIC
+          </div>
+        }
         bordered
         dataSource={arr}
         renderItem={(item) => (
