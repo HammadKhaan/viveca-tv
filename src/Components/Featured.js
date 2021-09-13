@@ -4,6 +4,8 @@ import RealMadrid from "./realmadrid.jpg";
 
 const heading = {
   color: "white",
+  textShadow:
+    "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
 };
 const description = {
   color: "white",
@@ -11,10 +13,10 @@ const description = {
     "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
 };
 const title = {
-    color: "red",
-    textShadow:
+  color: "red",
+  textShadow:
     "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-}
+};
 
 const Featured = () => {
   return (

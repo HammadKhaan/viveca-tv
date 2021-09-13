@@ -4,7 +4,7 @@ import Sidebar from "./Components/Sidebar";
 import { Col, Row } from "antd";
 import Main from "./Components/Main";
 import Featured from "./Components/Featured";
-import Video from "./Components/Video";
+import Video1 from "./Components/Video1";
 
 const sidebar = {
   height: "maxContent",
@@ -15,12 +15,12 @@ function App() {
   return (
     <div className="App">
       <Row>
-        <Col style={sidebar} sm={3} md={6} lg={6}>
+        <Col style={sidebar} xs={6} sm={3} md={6} lg={6}>
           <Sidebar />
         </Col>
-        <Col sm={21} md={18} lg={18}>
+        <Col xs={18} sm={21} md={18} lg={18}>
           <Main />
-          <Video />
+          <Video1 />
           <Featured />
         </Col>
       </Row>
